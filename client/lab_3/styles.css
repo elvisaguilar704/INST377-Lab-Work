@@ -32,11 +32,16 @@
 }
 
 .links {
+    
     display: flex;
     justify-content: flex-end ;
+
 }
 
+
 .demos {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
     color: white;
     margin-left: auto;
     text-decoration: none;
@@ -44,12 +49,14 @@
 }
 
  .main-page {
+    
     margin-left: 20px;
     color: white;
     text-decoration: none; 
     align-self: flex-end;
     
 }
+
 
 
 .header-container {

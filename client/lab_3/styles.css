@@ -1,1 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lab {
+    color: black;
+    background-color: rgb(12, 116, 102);
+    padding: 10px 0;
+
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; 
+    /* This display: flex enables the flexbox layout mode */
+    
+}
+
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+    /* display to enable the layout and justify-content align the items */
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end ;
+}
+
+.demos {
+    color: white;
+    margin-left: auto;
+    text-decoration: none;
+    
+}
+
+ .main-page {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none; 
+    align-self: flex-end;
+    
+}
+
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.first-item {
+    order: -1;
+}
+
+.last-item {
+    order: -1;
+}
+
+/* puts the socials on the bottom of blue box */
+.github,
+.project-link {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+/* flex: 1; line tells the items to stretch to match the width of .footer. */
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-three {
+    flex: 2;
+}
+
+.footer-one,
+.footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a.visited {
+    text-decoration: none;
+}
+a.hover {
+    text-decoration: underline;
+}
+
+
+.date,
+.demo-main {
+    align-self: flex-end;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #F09A9D; /* Red */
+    }
+}
 

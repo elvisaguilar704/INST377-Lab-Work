@@ -1,0 +1,5 @@
+Create a new folder in your /public directory called 'flappy'
+/public/flappy
+Add an index.html file to /flappy
+Add a script.js file to /flappy and link it to your HTML
+Do your work inside those files.

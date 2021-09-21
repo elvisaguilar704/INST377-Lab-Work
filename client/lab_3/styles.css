@@ -157,5 +157,10 @@ a.hover {
     body {
         background-color: #F09A9D; /* Red */
     }
+    .content {
+        order: 1;
+    }
+
+
 }
 

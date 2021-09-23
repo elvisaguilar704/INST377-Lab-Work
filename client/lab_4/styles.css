@@ -28,7 +28,6 @@
 .carousel .carousel_item--visible {
     display: block;
     animation: fadeVisibility 0.5s;
-    
 }
 
 /*Fix the arrows with transform I think*/
@@ -190,13 +189,10 @@
 #carousel_button--prev,
 #carousel_button--next {
     font-weight: bold;
-    height: 20px;
-    width: 50px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border-width: medium;
+    cursor: pointer;
 }
 
-
-
-/*.carousel {
-    display: flex;
-    justify-content: center;
-}

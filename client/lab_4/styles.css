@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 600px;  /*600*/
+    position: relative;
+    
+    
+}
+
+.carousel .carousel_item,
+.carousel .carousel_item--hidden {
+    display: none;
+    
+}
+
+.carousel .carousel_item img {
+    width: 100%;
+    width: 600px; /*600*/
+    justify-content: center;
+    
+}
+
+.carousel .carousel_item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+    
+}
+
+/*Fix the arrows with transform I think*/
+.carousel .carousel_actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel_actions button {
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer; 
+    width: 90px;
+    height: 40px;
+    
+}
+
+.carousel .carousel_actions button#carousel_button--prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel_actions button#carousel_button--next {
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.github,
+.project-link {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+/* flex: 1; line tells the items to stretch to match the width of .footer. */
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-three {
+    flex: 2;
+}
+
+.footer-one,
+.footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+}
+
+.lab {
+    color: black;
+    background-color: rgb(12, 116, 102);
+    padding: 10px 0;
+
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; 
+    /* This display: flex enables the flexbox layout mode */
+    
+}
+
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+    /* display to enable the layout and justify-content align the items */
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.links {
+    
+    display: flex;
+    justify-content: flex-end ;
+
+}
+
+
+.demos {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+    color: white;
+    margin-left: auto;
+    text-decoration: none;
+    
+}
+
+ .main-page {
+    
+    margin-left: 20px;
+    color: white;
+    text-decoration: none; 
+    align-self: flex-end;
+    
+}
+
+#carousel_button--next:hover {
+    background-color: orange;
+    border-color: green;
+}
+
+#carousel_button--prev:hover {
+    background-color: orange;
+    border-color: green;
+}
+ 
+#carousel_button--prev,
+#carousel_button--next {
+    font-weight: bold;
+    height: 20px;
+    width: 50px;
+}
+
+
+
+/*.carousel {
+    display: flex;
+    justify-content: center;
+}

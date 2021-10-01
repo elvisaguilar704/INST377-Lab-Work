@@ -37,19 +37,21 @@ body {
   border: 1px solid #D6D9DC;
   border-radius: 3px;
 
-  width: 30%;
+  width: 20%;
   height: 50%;
   padding: 20px;
   margin-right: 20px;
+  margin-left: 40px;
 }
 
 .column {
   background-color: #9fafca;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
-  width: 40%;
+  width: 20%;
   padding: 20px;
   margin-left: 20px;
+  margin-right: 20px;
   height: 20%;
   
 }

@@ -18,7 +18,8 @@ async function windowActions() {
         //console.log(place)
       // here we need to figure out if city and state matches what was searched
       const regex = new RegExp(wordToMatch, 'gi');
-      return place.city.match(regex) || place.state.match(regex);
+      //return place.city.match(regex) || place.state.match(regex);
+      return place.name.match(regex) || place.category.match(regex);
     });
   }
 
@@ -34,15 +35,21 @@ async function windowActions() {
       const cityName = place.city   
       const placeName = place.name
       const categoryName = place.category
+      const addressName = place.address_line_1
+      const zipName = place.zip
       //.replace(regex, `<span class="h1">${event.target.value}</span>`);
       console.log(cityName) 
       const stateName = place.state  
       //.replace(regex, `<span class="h1">${event.target.value}</span>`);
       return `
                 <li>
-                    <span class="name">${placeName}</span>
-                    <span class="name">${cityName}, ${stateName}</span>
-                    <span class="name">${categoryName}</span>
+                    <span class="name">${placeName}</span> </br>
+                    <span class="name">${categoryName}</span> </br>
+                    <span class="name">${addressName}</span> </br>
+                    <span class="name">${cityName}</span> </br>
+                    <span class="name">${zipName}</span> 
+
+                    
                 </li>
             `;
     }).join('');
